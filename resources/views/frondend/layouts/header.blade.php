@@ -24,7 +24,7 @@
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="mailto:bdsquanggroup@gmail.com" class="tooltip"
+                                    <a href="mailto:SHManhLinh@gmail.com" class="tooltip"
                                         title="SHManhLinh@gmail.com">
                                         <i class="bi bi-envelope" style="font-size:16px;"></i> <span>
                                             SHManhLinh@gmail.com </span>
@@ -36,7 +36,7 @@
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="tel:𝟎𝟑𝟑𝟐.𝟒𝟗𝟖.𝟎𝟕𝟐" class="tooltip" title="𝟎𝟑𝟑𝟐.𝟒𝟗𝟖.𝟎𝟕𝟐">
+                                    <a href="tel:0332498072" class="tooltip" title="0332498072">
                                         <i class="bi bi-telephone-fill" style="font-size:16px;"></i> <span>𝟎𝟑𝟑𝟐.𝟒𝟗𝟖.𝟎𝟕𝟐</span>
                                     </a>
                                 </li>
@@ -85,29 +85,34 @@
                 <!-- Right Elements -->
                 <div class="flex-col hide-for-medium flex-right">
                     <ul
-                        class="header-nav header-nav-main nav nav-right  nav-divided nav-size-large nav-spacing-xlarge nav-uppercase">
+                        class="header-nav header-nav-main nav nav-right nav-divided nav-size-large nav-spacing-xlarge nav-uppercase">
+                        {{-- <li id="menu-item-461"
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-461 active menu-item-design-default has-dropdown">
+                        <a href="{{ route('home.index') }}" style="color:{{ (url()->current()==route('home.index'))?'red':'black' }}" aria-current="page" class="nav-top-link">TRANG CHỦ</a>
+
+                    </li> --}}
                         <li id="menu-item-461"
-                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-461 active menu-item-design-default has-dropdown">
+                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-461 active menu-item-design-default ">
                             <a href="{{ route('home.index') }}" style="color:{{ (url()->current()==route('home.index'))?'red':'black' }}" aria-current="page" class="nav-top-link">TRANG CHỦ</a>
 
                         </li>
                         <li id="menu-item-951"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-951 menu-item-design-default has-dropdown">
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-951 menu-item-design-default ">
                             <a href="{{ route('home.gioi_thieu') }}" style="color:{{ (url()->current()==route('home.gioi_thieu'))?'red':'black' }}" class="nav-top-link">GIỚI THIỆU</a>
 
                         </li>
                         <li id="menu-item-952"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-952 menu-item-design-default has-dropdown">
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-952 menu-item-design-default ">
                             <a href="{{ route('home.thong_bao') }}" style="color:{{ (url()->current()==route('home.thong_bao'))?'red':'black' }}"class="nav-top-link">THÔNG BÁO</a>
 
                         </li>
                         <li id="menu-item-450"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-450 menu-item-design-default has-dropdown">
+                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-450 menu-item-design-default ">
                             <a href="{{ route('home.su_kien') }}"style="color:{{ (url()->current()==route('home.su_kien'))?'red':'black' }}"  class="nav-top-link ">SỰ KIỆN</a>
 
                         </li>
                         <li id="menu-item-148"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-148 menu-item-design-default has-dropdown">
+                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-148 menu-item-design-default ">
                             <a href="{{ route('home.dang_ky') }}"style="color:{{ (url()->current()==route('home.dang_ky'))?'red':'black' }}" class="nav-top-link">ĐĂNG KÝ</a>
                         </li>
                     </ul>

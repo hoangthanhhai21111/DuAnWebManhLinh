@@ -6,6 +6,7 @@ use App\Http\Controllers\GroupController;
 use App\Http\Controllers\KhoaHocController;
 use App\Http\Controllers\login;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,7 @@ Route::prefix('/trang-chu')->middleware(['auth', 'PreventBackHistory'])->group(f
         Route::put('RestoreDelete/{id}', [UserController::class, 'RestoreDelete'])->name('users.RestoreDelete');
     });
     Route::resource('users', UserController::class);
+    Route::resource('registers', RegisterController::class);
     Route::prefix('groups')->group(function () {
         Route::put('SoftDeletes/{id}', [GroupController::class, 'softDeletes'])->name('groups.SoftDeletes');
         Route::get('trash', [GroupController::class, 'trash'])->name('groups.trash');

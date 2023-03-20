@@ -57,14 +57,10 @@
                         class="bi bi-chat-right-dots"></i> <span><h5>Khách hàng</h5></span></a>
                 <ul class="collapse list-unstyled" id="apps">
                     {{-- @can('viewAny', App\Models\Brand::class) --}}
-                    <li><a href="
-                        {{-- {{ route('customers.index') }} --}}
-                        ">> <span>Danh sách khách hàng</span></a></li>
+                    <li><a href="{{ route('registers.index') }}">> <span>Danh sách khách hàng</span></a></li>
                     {{-- @endcan --}}
                     {{-- @can('viewAny', App\Models\Order::class) --}}
-                    <li><a href="
-                        {{-- {{ route('orders.index') }} --}}
-                        ">> <span>đơn hàng</span></a></li>
+               
                     {{-- @endcan --}}
                 </ul>
             </li>

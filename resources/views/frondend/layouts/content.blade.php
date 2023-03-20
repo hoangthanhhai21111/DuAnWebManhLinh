@@ -171,13 +171,8 @@
 
                                     </div>
                                 </div>
-
-
-
                                 <div id="col-1875567096" class="col medium-6 small-12 large-6">
                                     <div class="col-inner">
-
-
                                         <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_903339558">
                                             <div data-animate="fadeInRight">
                                                 <div class="img-inner dark">
@@ -198,31 +193,23 @@
 
                                     </div>
                                 </div>
-
-
                             </div>
                             <div id="text-1492947643" class="text">
-
                                 <h2 style="text-align: center;"><span style="color: #ed1c24;"><strong>DỊCH VỤ CỦA
                                             CHÚNG TÔI</strong></span></h2>
                                 <p><img loading="lazy" class="alignnone size-full wp-image-40"
                                         src="https://quanggroup.vn/wp-content/uploads/2020/12/bg_content.png"
                                         alt="" width="253" height="22" /><br />
-
                                     <style>
                                         #text-1492947643 {
                                             text-align: center;
                                         }
                                     </style>
                             </div>
-
                             <div class="row row-small" id="row-1523900692">
-
                                 <div id="col-2044222511" class="col medium-4 small-12 large-4"
                                     data-animate="fadeInLeft">
                                     <div class="col-inner text-center">
-
-
                                         <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1078633589">
                                             <div data-animate="fadeInLeft">
                                                 <div class="img-inner image-cover dark" style="padding-top:300px;">

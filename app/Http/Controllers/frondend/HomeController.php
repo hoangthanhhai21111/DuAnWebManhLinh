@@ -52,7 +52,9 @@ class HomeController extends Controller
         return view('frondend.home.thongbao', compact('thongbaos'));
     }
     function dangky(){
-        return view('frondend.home.dangky')->with('alert','123');
+        $top10  = DB::table('posts')->select('*')->where('category_id', '=',1)->orWhere('category_id', '=',3)->orderBy('id', 'DESC')->where('status',1)->paginate(5);
+        // dd($top10);
+        return view('frondend.home.dangky', compact('top10'));
     }
     function regiter(Request $request){
          $register = new Register();

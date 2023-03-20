@@ -1006,7 +1006,6 @@
         @include('frondend.layouts.header')
         @yield('content')
 
-        {{-- @include('frondend.layouts.content') --}}
 
         @include('frondend.layouts.footer')
 
@@ -1022,31 +1021,28 @@
                 </li>
                 <li
                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-461">
-                    <a href="{{ route('home.index') }}" aria-current="page">Trang chủ</a>
+                    <a href="{{ route('home.index') }}"style="color:{{ (url()->current()==route('home.index'))?'red':'' }}" aria-current="page">Trang chủ</a>
 
                 </li>
                 <li
                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-951">
-                    <a href="#">Giới thiệu</a>
+                    <a href="{{ route('home.gioi_thieu') }}" style="color:{{ (url()->current()==route('home.gioi_thieu'))?'red':'' }}">Giới thiệu</a>
 
                 </li>
                 <li
                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-952">
-                    <a href="https://quanggroup.vn/chuyen-muc/dat-quang-binh/">Thông báo</a>
+                    <a href="{{ route('home.thong_bao') }}" style="color:{{ (url()->current()==route('home.thong_bao'))?'red':'' }}">Thông báo</a>
 
                 </li>
                 <li
                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-450">
-                    <a href="https://quanggroup.vn/chuyen-muc/nha-dat/">Sự Kiện</a>
+                    <a href="{{ route('home.su_kien') }}" style="color:{{ (url()->current()==route('home.su_kien'))?'red':'' }}">Sự Kiện</a>
 
                 </li>
                 <li
                     class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-148">
-                    <a href="#">Đăng ký</a>
+                    <a href="{{ route('home.dang_ky') }}" style="color:{{ (url()->current()==route('home.dang_ky'))?'red':'' }}">Đăng ký</a>
                 </li>
-
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a
-                        href="https://quanggroup.vn/lien-he/">LIÊN HỆ</a></li>
                 <li class="html header-social-icons ml-0">
                     <div class="social-icons follow-icons"><a href="http://url" target="_blank"
                             data-label="Facebook" rel="noopener noreferrer nofollow"
@@ -1069,7 +1065,7 @@
             <div class="hotline-phone-ring-circle"></div>
             <div class="hotline-phone-ring-circle-fill"></div>
             <div class="hotline-phone-ring-img-circle">
-                <a href="tel:𝟎𝟑𝟑𝟐𝟒𝟗𝟖𝟎𝟕𝟐" class="pps-btn-img">
+                <a href="tel:0332498072" class="pps-btn-img">
                     <img src="https://quanggroup.vn/wp-content/plugins/hotline-phone-ring/assets/images/icon-1.png"
                         alt="Số điện thoại" width="50" />
                 </a>
@@ -1129,7 +1125,7 @@
         id='flatsome-masonry-js-js'></script>
         @if(session('alert'))   
         <script>
-            alert('đăng ký thành công');
+            alert('đăng ký thành công.');
         </script>
         @endif
 </body>

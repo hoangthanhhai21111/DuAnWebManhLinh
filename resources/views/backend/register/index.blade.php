@@ -10,7 +10,7 @@
                 </ol>
             </nav>
             <div class="d-md-flex align-items-md-start">
-                <h1 class="page-title mr-sm-auto">Quản lý Sự Kiện</h1>
+                <h1 class="page-title mr-sm-auto">Danh sách người Đăng ký</h1>
                 <div class="btn-toolbar">
                 </div>
             </div>
@@ -27,16 +27,11 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
-                            <form action="" method="GET" id="form-search">
-                                <a href="{{ route('banners.create') }}" class="btn btn-primary mr-2">
-                                    <i class="fa-solid fa fa-plus"></i>
-                                    <span class="ml-1">Thêm Mới</span>
-                                </a>
-                            </form>
+                            <br>
                         </div>
                     </div>
                     <div class="container col-12">
-                        @if (!count($banners))
+                        @if (!count($registers))
                             <p class="text-success">
                             <div class="alert alert-danger"> <i class="bi bi-x-circle"aria-hidden="true"></i>
                                 không tìm thấy kết quả.
@@ -63,42 +58,40 @@
                                 <tr>
                                     <th style="min-width:50px"> #</th>
                                     <th>
-                                        <H6>Ảnh Bìa</H6>
+                                        <H6>Tên</H6>
                                     </th>
                                     <th>
-                                        <H6>Tùy Chọn </H6>
+                                        <H6>Số ĐT </H6>
+                                    </th>
+                                    <th>
+                                       <h6>Hạng Đăng ký</h6>
+                                    </th>
+                                    <th>
+                                        <H6>Ngày</H6>
                                     </th>
                                 </tr>
                             </thead><!-- /thead -->
                             <tbody>
-                                @foreach ($banners as $key => $banner)
+                                @foreach ($registers as $key => $register)
                                     <tr>
                                         <th scope="row">{{ $key + 1 }}</th>
                                         <td>
-                                            <img class="image_photo rounded-circle" src="{{ asset($banner->image) }}"
-                                                style="width:75px;height:75px">
+                                            {{$register->name}}
                                         </td>
                                         <td>
-                                            <form action="{{ route('banners.destroy', $banner->id) }}" method="post">
-                                                {{-- @can('update', App\Models\User::class)
-                                            @endcan --}}
-                                                <a href="{{ route('banners.edit', $banner->id) }}"
-                                                    class="btn btn-sm btn-icon btn-secondary"><i
-                                                        class="fa fa-pencil-alt"></i></a>
-                                                @csrf
-                                                @method('DELETE')
-                                                {{-- @can('forceDelete', App\Models\User::class) --}}
-                                                <button type="submit" class="btn btn-sm btn-icon btn-secondary"
-                                                    onclick="return confirm('Bạn chắc chắn muốn xóa?')"><i
-                                                        class="far fa-trash-alt"></i></button>
-                                                {{-- @endcan --}}
-                                            </form>
+                                            {{$register->phone}}
+                                        </td>
+                                        <td>
+                                            {{$register->course}}
+                                        </td>
+                                        <td>
+                                            {{$register->created_at->format('d/m/Y')}}
                                         </td>
                                     </tr>
                                 @endforeach
                             </tbody><!-- /tbody -->
                         </table>
-                        {{-- {{ $banners->onEachSide(5)->links()}} --}}
+                        {{ $registers->onEachSide(5)->links()}}
                     </div>
                 </div>
             </div>

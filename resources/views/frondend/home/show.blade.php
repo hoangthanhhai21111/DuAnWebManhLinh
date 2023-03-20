@@ -21,7 +21,8 @@
                                     </div>
                                     <div style="width:100%; height: 50%">
                                         <div style="width:100%; height: 50%">
-                                            <img style="width:100%; height: 50%" src="{{ asset($show->image) }}" alt="">
+                                            <img style="width:100%; height: 50%" src="{{ asset($show->image) }}"
+                                                alt="">
                                         </div>
                                     </div>
                                 </header>

@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class RegisterController extends Controller
 {
     function index(){
-        $register = Register::all();
-        return view('backend.register.index', compact('register'));
+        $registers = Register::orderBy('id', 'DESC')->paginate(10);
+        return view('backend.register.index', compact('registers'));
     }
 }

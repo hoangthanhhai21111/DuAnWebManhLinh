@@ -16,7 +16,7 @@
                                                 <img width="650" height="400"
                                                     src="{{ asset($thongbao->image) }}"
                                                     class="attachment-medium size-medium wp-post-image"
-                                                    alt="Mặt Bằng TNR Stars Đồng Hới" loading="lazy"
+                                                    alt="{{$thongbao->title}}}}" loading="lazy"
                                                     sizes="(max-width: 650px) 100vw, 650px" />
                                             </div>
                                         </div>
@@ -46,7 +46,7 @@
                     </div>
                     <ul class="page-numbers nav-pagination links text-center">
                            <h1 class="btn">{{$thongbaos->links()}}</h1>
-                           
+
                     </ul>
                 </div>
             </div>
