@@ -52,16 +52,26 @@
                     <li><a href="{{ route('banners.index') }}">> <span>Ảnh bìa</span></a></li>
                 </ul>
             </li>
+
             <li>
                 <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
-                        class="bi bi-chat-right-dots"></i> <span><h5>Khách hàng</h5></span></a>
+                        class="bi bi-chat-right-dots"></i> <span><h5>Học Viên</h5></span></a>
                 <ul class="collapse list-unstyled" id="apps">
                     {{-- @can('viewAny', App\Models\Brand::class) --}}
-                    <li><a href="{{ route('registers.index') }}">> <span>Danh sách khách hàng</span></a></li>
+
                     {{-- @endcan --}}
                     {{-- @can('viewAny', App\Models\Order::class) --}}
-               
+
                     {{-- @endcan --}}
+                    <li><a href="{{ route('khoa-hoc.index') }}">> <span>Khóa học</span></a></li>
+                    {{-- @endcan --}}
+                    {{-- @can('viewAny', App\Models\Category::class) --}}
+                        <li><a href="{{ route('lop-hoc.index') }}">> <span>Lớp học</span></a></li>
+                    {{-- @endcan --}}
+                    {{-- @can('viewAny', App\Models\Brand::class) --}}
+                    {{-- @endcan --}}
+                    <li><a href="{{ route('banners.index') }}">> <span>Học Viên</span></a></li>
+                    <li><a href="{{ route('registers.index') }}">> <span>Danh sách Người đăng Ký</span></a></li>
                 </ul>
             </li>
     </div>

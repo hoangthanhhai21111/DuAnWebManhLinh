@@ -7,6 +7,7 @@
 
 <head>
     <meta charset="UTF-8" />
+
     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     {{-- <link rel="shortcut icon" content ="text/html" href="{{ asset('themeAdmin/images/logo/logo.png') }}"> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -20,7 +21,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <!-- This site is optimized with the Yoast SEO plugin v16.9 - https://yoast.com/wordpress/plugins/seo/ -->
-    <title>Trung Tâm Sát Hạch Mạnh Linh</title>
+    <title>{{ $title }}</title>
     <meta property="og:site_name" content="Quang Group" />
     <meta property="article:modified_time" content="2021-12-02T09:26:47+00:00" />
     {{-- <meta property="og:image" content="https://quanggroup.vn/wp-content/uploads/2020/12/bg_content.png" /> --}}
@@ -105,7 +106,9 @@
     <link rel='stylesheet' id='wp-block-library-css'
         href='{{ asset('wp-includes/css/dist/block-library/style.min.css') }}' type='text/css' media='all' />
 
+
     <style id='global-styles-inline-css' type='text/css'>
+
         body {
             --wp--preset--color--black: #000000;
             --wp--preset--color--cyan-bluish-gray: #abb8c3;
@@ -441,12 +444,14 @@
         gtag('config', 'UA-205724118-1');
     </script>
     <meta name="google-site-verification" content="lw8AxP-t7g6CKZTeOY0NusoUuup1oxHuxCmQe1Qgi5M" />
-    <link rel="icon" href="https://quanggroup.vn/wp-content/uploads/2021/01/cropped-logomoi-32x32.png"
-        sizes="32x32" />
-    <link rel="icon" href="{{ asset('wp-content/uploads/2021/01/cropped-logomoi-192x192.png') }}" sizes="192x192" />
-    <link rel="apple-touch-icon" href="{{ asset('wp-content/uploads/2021/01/cropped-logomoi-180x180.png') }}" />
+    <link rel="icon" href="{{ asset('themeAdmin/images/logo/logo.png') }}"
+        sizes="50x50" />
+    <link rel="icon" href="{{ asset('themeAdmin/images/logo/logo.png') }}" sizes="200x200" />
+    <link rel="apple-touch-icon" href="{{ asset('themeAdmin/images/logo/logo.png') }}" />
+    <link href="{{ asset('themeAdmin/images/logo/logo.png') }}" rel="apple-touch-icon">
+
     <meta name="msapplication-TileImage"
-        content="{{ asset('wp-content/uploads/2021/01/cropped-logomoi-270x270.png') }}" />
+        content="{{ asset('themeAdmin/images/logo/logo.png') }}"/>
     <style id="custom-css" type="text/css">
         :root {
             --primary-color: #ffcb04;

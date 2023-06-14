@@ -85,7 +85,7 @@
                                         <div class="social-icons share-icons share-row relative"><a href=""
                                                 data-action="share/whatsapp/share"
                                                 class="icon button circle is-outline tooltip whatsapp show-for-medium"
-                                                title="Share on WhatsApp"><i class="icon-whatsapp"></i></a><a href=""
+                                                title="Share on WhatsApp"><i class="icon-whatsapp"></i></a><a href="{{'https://www.facebook.com/sharer.php?u='.route('home.show',['id' => $show->id,'slug'=>str_slug($show->title)])}}"
                                                 data-label="Facebook"
                                                 onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
                                                 rel="noopener noreferrer nofollow" target="_blank"

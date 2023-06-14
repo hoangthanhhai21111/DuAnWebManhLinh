@@ -45,7 +45,7 @@ class UserController extends Controller
             'groups'         => $groups,
             'f_group_id'     => $group_id
         ];
-        return view('backend.users.index',$params);
+        return view('backend.users.index2',$params);
 
      }
      function create(Request $request){
@@ -99,8 +99,7 @@ class UserController extends Controller
         try {
         $user = User::findOrFail($id);
         $user->deleted_at = date("Y-m-d h:i:s");
-
-         $user->save();
+        $user->save();
          return redirect()->route('users.index')->with('success','xóa thành công');
      } catch (\Exception $e) {
          Log::error($e->getMessage());

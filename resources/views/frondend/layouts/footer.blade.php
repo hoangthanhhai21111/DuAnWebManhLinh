@@ -35,7 +35,7 @@
                                 </div>
                             </div>
 
-                            <h3><span style="color: #ff0000; font-size: 120%;">TRUNG TÂM ĐÀO TẠO & SÁT HẠCH LÁI XE MẠNH
+                            <h3><span style="color: #ff0000; font-size: 120%;">TRUNG TÂM ĐT& SH LÁI XE MẠNH
                                     LINH</span></h3>
                             <p class="info"><i class="fa fa-home"></i> <span style="color: #d83131;">▸</span> Địa chỉ:
                                 04 Lê Thế Hiếu, Phường 1, Đông Hà, Quảng Trị</p>
@@ -64,7 +64,7 @@
                                         <span class="wpcf7-form-control-wrap your-email">
                                             <input type="number" name="phone" value="" size="40"
                                                 class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                                aria-required="true" aria-invalid="false" placeholder="Nhập Số ĐT" />
+                                                aria-required="true" aria-invalid="false" placeholder="Nhập Số ĐT" required  />
                                         </span><br />
                                         <input name="submit" type="submit" value="Gửi"
                                             class="wpcf7-form-control wpcf7-submit button" /> </form>
@@ -118,7 +118,7 @@
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0"
             nonce="JXBsTVVT"></script>
 
-        <div class="absolute-footer dark medium-text-center text-center">
+        <div class=" absolute-footer dark medium-text-center text-center">
             <div class="container clearfix">
 
 

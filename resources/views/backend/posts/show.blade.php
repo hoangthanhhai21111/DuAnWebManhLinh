@@ -1,11 +1,21 @@
 @extends('backend.master')
 @section('content')
-    <div class="card">
-        <div class="md-3">
-            <a href="{{ route('posts.index') }}" class="btn btn-danger btn-rounded waves-effect waves-light ">
+    <div class="card box" >
+        <style>
+            .box {
+                margin: 20px 0px 0px 0px;
+            }
+            .box1{
+                margin: 0px 0px 0px 20px;
+            }
+        </style>
+        <div class="md-3 box1">
+            <br>
+              <a href="{{ route('posts.index') }}" class="btn btn-primary btn-rounded waves-effect waves-light ">
                 <i class=" fas fa-reply-all"></i>
                 Quay Lại</a>
         </div>
+        <br>
         <div class="row g-0">
             <div class="col-md-6 border-end">
                 <div style="text-align: center" class="d-flex flex-column justify-content-center">

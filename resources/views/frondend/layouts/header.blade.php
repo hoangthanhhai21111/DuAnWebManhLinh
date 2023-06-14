@@ -86,11 +86,7 @@
                 <div class="flex-col hide-for-medium flex-right">
                     <ul
                         class="header-nav header-nav-main nav nav-right nav-divided nav-size-large nav-spacing-xlarge nav-uppercase">
-                        {{-- <li id="menu-item-461"
-                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-461 active menu-item-design-default has-dropdown">
-                        <a href="{{ route('home.index') }}" style="color:{{ (url()->current()==route('home.index'))?'red':'black' }}" aria-current="page" class="nav-top-link">TRANG CHỦ</a>
 
-                    </li> --}}
                         <li id="menu-item-461"
                             class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-461 active menu-item-design-default ">
                             <a href="{{ route('home.index') }}" style="color:{{ (url()->current()==route('home.index'))?'red':'black' }}" aria-current="page" class="nav-top-link">TRANG CHỦ</a>
@@ -108,7 +104,7 @@
                         </li>
                         <li id="menu-item-450"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-450 menu-item-design-default ">
-                            <a href="{{ route('home.su_kien') }}"style="color:{{ (url()->current()==route('home.su_kien'))?'red':'black' }}"  class="nav-top-link ">SỰ KIỆN</a>
+                            <a href="{{ route('home.su_kien') }}"style="color:{{ (url()->current()==route('home.su_kien'))?'red':'black' }}"  class="nav-top-link ">TIN TỨC - SỰ KIỆN</a>
 
                         </li>
                         <li id="menu-item-148"

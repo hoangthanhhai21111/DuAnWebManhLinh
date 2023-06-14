@@ -3,6 +3,7 @@
 use App\Http\Controllers\BannerController;
 use App\Http\Controllers\frondend\HomeController;
 use App\Http\Controllers\GroupController;
+use App\Http\Controllers\HangController;
 use App\Http\Controllers\KhoaHocController;
 use App\Http\Controllers\login;
 use App\Http\Controllers\PostController;
@@ -10,6 +11,10 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VideoController;
 use Illuminate\Support\Facades\Route;
+
+Route::get('layouts',function(){
+ return view('backend.layouts1.master');
+});
 
 Route::prefix('login')->group(function () {
     route::get('/', [login::class, 'login'])->name('login');
@@ -51,6 +56,9 @@ Route::prefix('/trang-chu')->middleware(['auth', 'PreventBackHistory'])->group(f
         Route::put('RestoreDelete/{id}', [EventController::class, 'RestoreDelete'])->name('events.RestoreDelete');
     });
     Route::resource('banners', BannerController::class);
+    Route::resource('khoa-hoc', HangController::class);
+
+    Route::resource('lop-hoc', KhoaHocController::class);
     Route::resource('videos', VideoController::class);
 });
 Route::prefix('')->group(function () {

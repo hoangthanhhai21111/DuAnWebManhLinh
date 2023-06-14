@@ -20,17 +20,18 @@ class PostController extends Controller
         $status                 = $request->status ?? '';
         $category_id            = $request->category_id ?? '';
         $query = Post::query(true);
-        if ($name) {
-            $query->where('name', 'LIKE', '%' . $name . '%')->where('deleted_at', '=', null);
-        }
         if ($key) {
             $query->orWhere('id', $key)->where('deleted_at', '=', null);
             $query->orWhere('title', 'LIKE', '%' . $key . '%')->where('deleted_at', '=', null);
         }
+        if ($name) {
+            $query->where('name', 'LIKE', '%' . $name . '%')->where('deleted_at', '=', null);
+        }
+
         if ($category_id) {
             $query->where('category_id',$category_id)->where('deleted_at', '=', null);
         }
-        if ($category_id) {
+        if ($status) {
             $query->where('status',$status)->where('deleted_at', '=', null);
         }
         $posts = $query->orderBy('id', 'DESC')->where('deleted_at', '=', null)->paginate(5);
@@ -51,7 +52,6 @@ class PostController extends Controller
     }
     function store(StorePostRequest $request)
     {
-
         try {
         $post = new Post();
         $post->title = $request->title;
@@ -73,7 +73,6 @@ class PostController extends Controller
             $imge = $request->file_names;
             ImagePost::where('post_id', '=', $post->id)->delete();
             foreach ($imge as $file_detail) {
-                // File::delete($product->file_names()->file_name);
                 $detail_path = 'storage/' . $file_detail->store('/PostImage', 'public');
                 $post->ImagePost()->saveMany([
                     $imgae = new ImagePost([
@@ -87,7 +86,7 @@ class PostController extends Controller
         return redirect()->route('posts.index')->with('success',' Tạo mới thành công');
     } catch (\Exception $e) {
         Log::error($e->getMessage());
-        return redirect()->route('posts.trash')->with('error','Tạo mới không thành công');
+        return redirect()->route('posts.index')->with('error','Tạo mới không thành công');
     }
     }
     public function show($id)
@@ -130,7 +129,6 @@ class PostController extends Controller
             $imge = $request->file_names;
             ImagePost::where('post_id', '=', $post->id)->delete();
             foreach ($imge as $file_detail) {
-                // File::delete($product->file_names()->file_name);
                 $detail_path = 'storage/' . $file_detail->store('/PostImage', 'public');
                 $post->ImagePost()->saveMany([
                     $imgae = new ImagePost([
@@ -143,7 +141,7 @@ class PostController extends Controller
         return redirect()->route('posts.index')->with('success','cập nhật thành công');
     } catch (\Exception $e) {
         Log::error($e->getMessage());
-        return redirect()->route('posts.trash')->with('error','cập nhật không thành công');
+        return redirect()->route('posts.index')->with('error','cập nhật không thành công');
     }
     }
     function softDeletes($id){

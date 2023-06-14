@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Hang;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use PhpParser\Node\Stmt\Return_;
 
 class HangController extends Controller
 {
@@ -13,7 +15,8 @@ class HangController extends Controller
      */
     public function index()
     {
-        //
+        $hangs= Hang::all();
+        return view('backend.hangs.index', compact('hangs'));
     }
 
     /**

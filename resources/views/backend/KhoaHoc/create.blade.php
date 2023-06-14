@@ -5,26 +5,38 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item active">
-                        <a href="{{ route('posts.index') }}"><i class="breadcrumb-icon fa fa-angle-left mr-2"></i>Quản lý bài viết</a>
+                        <a href="{{ route('posts.index') }}"><i class="breadcrumb-icon fa fa-angle-left mr-2"></i>Quản lý bài
+                            viết</a>
                     </li>
                 </ol>
             </nav>
             <h1 class="page-title">Thêm Sự Kiện</h1>
         </header>
-        <div class="page-section">
-            <form method="post" action="{{ route('banners.store') }}" enctype="multipart/form-data">
+        <div class="page-section col-lg-10">
+            <form method="post" action="{{ route('lop-hoc.store') }}" enctype="multipart/form-data">
                 @csrf
                 <div class="card">
                     <div class="card-body">
                         <legend>Thông tin cơ bản</legend>
                         <div class="row">
-                            <div class="form-group col-lg-4">
+                            <div class="form-group col-lg-6">
                                 <label class="control-label @error('category_id') is-invalid @enderror"
-                                    for="flatpickr01"><b>Hìnhh Ảnh*</b></label><br>
-                                <input accept="image/*" type='file' id="inputFile" name="image" /><br>
-                                <br>
-                                <img type="hidden" width="200px" height="200px" id="blah" src="#"
-                                    alt="" />
+                                    for="flatpickr01"><b>Tên Lơp Học*</b></label><br>
+                                <input type='text' id="inputFile" class="form-control" name="len_khoa_hoc" /><br>
+
+                                @if ($errors->any())
+                                    <p style="color:red">*{{ $errors->first('image') }}</p>
+                                @endif
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label class="control-label @error('category_id') is-invalid @enderror"
+                                    for="flatpickr01"><b>Khóa Học*</b></label><br>
+                                <select name="hang" id="" class="form-control">
+                                    <option value="">--Chọn Khóa Học--</option>
+                                    @foreach ($hangs as $hang)
+                                        <option value="{{ $hang->id }}">{{ $hang->ten_hang}}</option>
+                                    @endforeach
+                                </select>
                                 @if ($errors->any())
                                     <p style="color:red">*{{ $errors->first('image') }}</p>
                                 @endif

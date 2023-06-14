@@ -151,7 +151,7 @@
                                             <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_190161367">
                                                 <div class="img-inner dark">
                                                     <img width="600" height="502"
-                                                        src="https://scontent.fdad3-1.fna.fbcdn.net/v/t39.30808-6/308838534_517285770400689_6500137025113318099_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=niCmuY2QxP4AX-GMvIH&_nc_ht=scontent.fdad3-1.fna&oh=00_AfDUNBBV3GmZWFqrsAcrIJJbTzHW6s3wlTOWFxH9XhrFpw&oe=64175491"
+                                                        src="{{ asset('themeAdmin/images/logo/manhlinh1.jpg') }}"
                                                         class="attachment-large size-large" alt="" loading="lazy"
                                                         sizes="(max-width: 600px) 100vw, 600px" />
                                                 </div>
@@ -209,13 +209,12 @@
                                                     <div class="">
                                                         <img style="width:100%;margin:0 auto; height:250px" width="577"
                                                             height="577"
-                                                            src="https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/326894787_876243450376081_8534521482458788125_n.jpg?stp=cp6_dst-jpg&_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=1xHmpa4Z8-EAX-nmRmV&_nc_ht=scontent.fdad3-4.fna&oh=00_AfCeGUmBsOlD9z_9PEffNIWskHeMHCRc3HyRO76C5FZb2A&oe=6415DCCB"
+                                                            src="{{ asset('themeAdmin/images/logo/manhlinh2.jpg') }}"
                                                             class="attachment- size-" alt="" loading="lazy"
                                                             sizes="(max-width: 577px) 100vw, 577px" />
                                                     </div>
                                                 </div>
-
-                                                <div class="box-text text-center">
+                                                {{-- <div class="box-text text-center">
                                                     <div class="box-text-inner">
                                                         <h2>
                                                             <span style="color: #d83131">Chất lượng đào tạo</span>
@@ -226,7 +225,7 @@
                                                             cam kết
                                                         </p>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -237,18 +236,18 @@
                                                 <div class="box-image">
                                                     <div class="">
                                                         <img style="width:100%;margin:0 auto; height:250px"
-                                                            src="https://i.ytimg.com/vi/eB5NOmy3KZE/maxresdefault.jpg"
+                                                            src="{{ asset('themeAdmin/images/logo/manhlinh3.jpg') }}"
                                                             class="attachment- size-" alt="" loading="lazy"
                                                             sizes="(max-width: 577px) 100vw, 577px" />
                                                     </div>
                                                 </div>
 
-                                                <div class="box-text text-center">
+                                                {{-- <div class="box-text text-center">
                                                     <div class="box-text-inner">
                                                         <h2>
                                                             <span style="color: #d83131">Công nghệ hiện đại</span>
                                                         </h2>
-                                                        {{-- <p>
+                                                        <p>
                                                             Với đội ngũ nhân viên chuyên nghiệp, tận tâm,
                                                             giàu kinh nghiệm, đã tạo nên một chuỗi giá trị
                                                             dịch vụ khách hàng và giải pháp bán hàng hoàn
@@ -256,31 +255,30 @@
                                                             khách hàng đã đầu tư sản phẩm từ
                                                             <strong><span style="color: #d83131">Quang
                                                                     Group</span></strong>.
-                                                        </p> --}}
+                                                        </p>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                         </div>
                                     </div>
-
                                     <div id="col-1286940314" class="col medium-4 small-12 large-4">
                                         <div class="col-inner">
                                             <div class="box has-hover has-hover box-text-bottom">
                                                 <div class="box-image">
                                                     <div class="">
                                                         <img style="width:100%;margin:0 auto; height:250px"
-                                                            src="https://quanggroup.vn/wp-content/uploads/2021/01/nang-tam-dang-cap.jpg"
+                                                            src="{{ asset('themeAdmin/images/logo/manhlinh4.jpg') }}"
                                                             class="attachment- size-" alt="" loading="lazy"
                                                             sizes="(max-width: 784px) 100vw, 784px" />
                                                     </div>
                                                 </div>
 
-                                                <div class="box-text text-center">
+                                                {{-- <div class="box-text text-center">
                                                     <div class="box-text-inner">
                                                         <h2>
                                                             <span style="color: #d83131">Cơ sở vất chất</span>
                                                         </h2>
-                                                        {{-- <p>
+                                                        <p>
                                                             Những dự án với vị trí thuận tiện, hạ tầng
                                                             hoàn chỉnh, phong cách thiết kế hiện đại, xây
                                                             dựng chất lượng, đầy đủ tiện nghi, môi trường
@@ -289,9 +287,9 @@
                                                             điều mà
                                                             <strong><span style="color: #d83131">Quang
                                                                     Group</span></strong> hướng tới.
-                                                        </p> --}}
+                                                        </p>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                         </div>
                                     </div>
