@@ -126,8 +126,8 @@
                                             }
                                         </style>
                                 </div>
-                                @foreach ($thongbaos as $thongbao)
-                                    <div class="row row-small" id="row-1523900692">
+
+                                    <div class="row row-small" id="row-1523900692"> @foreach ($thongbaos as $thongbao)
                                         <div id="col-2044222511" class="col medium-4 small-12 large-4"
                                             data-animate="fadeInLeft">
                                             <div class="col-inner text-center">

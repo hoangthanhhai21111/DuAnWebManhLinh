@@ -187,7 +187,6 @@
                           bất động sản Việt Nam, giữ vững niềm tin trong tâm
                           trí khách hàng và đối tác
                         </p> --}}
-
                                                 <style>
                                                     #text-584853905 {
                                                         color: rgb(0, 0, 0);

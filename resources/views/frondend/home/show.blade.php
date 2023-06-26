@@ -19,12 +19,12 @@
                                         @endif
                                         <h1 class="entry-title">{{ $show->title }}</h1>
                                     </div>
-                                    <div style="width:100%; height: 50%">
+                                    {{-- <div style="width:100%; height: 50%">
                                         <div style="width:100%; height: 50%">
                                             <img style="width:100%; height: 50%" src="{{ asset($show->image) }}"
                                                 alt="">
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </header>
                                 <div class="entry-content single-page">
                                     <p style="text-align: justify;">{!! $show->content !!}</p>
@@ -85,7 +85,8 @@
                                         <div class="social-icons share-icons share-row relative"><a href=""
                                                 data-action="share/whatsapp/share"
                                                 class="icon button circle is-outline tooltip whatsapp show-for-medium"
-                                                title="Share on WhatsApp"><i class="icon-whatsapp"></i></a><a href="{{'https://www.facebook.com/sharer.php?u='.route('home.show',['id' => $show->id,'slug'=>str_slug($show->title)])}}"
+                                                title="Share on WhatsApp"><i class="icon-whatsapp"></i></a><a
+                                                href="{{ 'https://www.facebook.com/sharer.php?u=' . route('home.show', ['id' => $show->id, 'slug' => str_slug($show->title)]) }}"
                                                 data-label="Facebook"
                                                 onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px');  return false;"
                                                 rel="noopener noreferrer nofollow" target="_blank"
@@ -131,7 +132,7 @@
                                                 </div>
                                                 <div class="flex-col flex-grow">
                                                     <a href="{{ route('home.show', ['id' => $top->id, 'slug' => str_slug($top->title)]) }}"
-                                                        title="Top 5 Dự án Bất động sản tại Quảng Trị Nổi bật"><b>{{ Str::words($top->title, 15) }}</b></a>
+                                                        title="{{ $top->title }}"><b>{{ Str::words($top->title, 15) }}</b></a>
                                                     <span class="post_comments op-7 block is-xsmall"><a
                                                             href="{{ route('home.show', ['id' => $top->id, 'slug' => str_slug($top->title)]) }}"></a></span>
                                                 </div>

@@ -1,5 +1,4 @@
-
-<header id="header" class="header has-sticky sticky-jump" style = 'background-color:red '>
+<header id="header" class="header has-sticky sticky-jump" style='background-color:red '>
     <div class="header-wrapper">
         <div id="top-bar" class="header-top hide-for-sticky nav-dark">
             <div class="flex-row container">
@@ -25,19 +24,20 @@
                                 </li>
                                 <li class="">
                                     <a href="mailto:SHManhLinh@gmail.com" class="tooltip"
-                                        title="SHManhLinh@gmail.com">
+                                        title="dtlxmanhlinh@gmail.com">
                                         <i class="bi bi-envelope" style="font-size:16px;"></i> <span>
-                                            SHManhLinh@gmail.com </span>
+                                            dtlxmanhlinh@gmail.com </span>
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a class="tooltip" title="08:00 - 17:00 ">
+                                    <a class="tooltip" title="07:00 - 17:00 ">
                                         <i class="bi bi-clock" style="font-size:16px;"></i> <span>07:00 - 17:00</span>
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="tel:0332498072" class="tooltip" title="0332498072">
-                                        <i class="bi bi-telephone-fill" style="font-size:16px;"></i> <span>𝟎𝟑𝟑𝟐.𝟒𝟗𝟖.𝟎𝟕𝟐</span>
+                                    <a href="tel: 0342252779" class="tooltip" title=" 0342252779">
+                                        <i class="bi bi-telephone-fill" style="font-size:16px;"></i>
+                                        <span>0342.252.779</span>
                                     </a>
                                 </li>
                             </ul>
@@ -55,12 +55,14 @@
         <div id="masthead" class="header-main ">
             <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
                 <!-- Logo -->
-                <div id="logo" class="flex-col logo">
+                <div id="logo" style="width: 300px" class="flex-col logo">
                     <!-- Header logo -->
                     <a href="#" title="Mạnh Linh - Trung tâm đào tạo & sát hạch lái xe" rel="home">
-                        <img width="185" height="87" src="{{ asset('themeAdmin/images/logo/logo.png') }}"
+                        <img width="185" height="87" src="{{ asset('themeAdmin/images/logo/logo1.png') }}"
                             class="header_logo header-logo" alt="Mạnh Linh" /><img width="185" height="87"
-                            class="header-logo-dark" alt="Mạnh Linh" /></a>
+                            class="header-logo-dark" alt="Mạnh Linh" />
+
+                    </a>
                 </div>
                 <!-- Mobile Left Elements -->
                 <div class="flex-col show-for-medium flex-left">
@@ -89,27 +91,35 @@
 
                         <li id="menu-item-461"
                             class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-461 active menu-item-design-default ">
-                            <a href="{{ route('home.index') }}" style="color:{{ (url()->current()==route('home.index'))?'red':'black' }}" aria-current="page" class="nav-top-link">TRANG CHỦ</a>
+                            <a href="{{ route('home.index') }}"
+                                style="color:{{ url()->current() == route('home.index') ? 'red' : 'black' }}"
+                                aria-current="page" class="nav-top-link">TRANG CHỦ</a>
 
                         </li>
                         <li id="menu-item-951"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-951 menu-item-design-default ">
-                            <a href="{{ route('home.gioi_thieu') }}" style="color:{{ (url()->current()==route('home.gioi_thieu'))?'red':'black' }}" class="nav-top-link">GIỚI THIỆU</a>
+                            <a href="{{ route('home.gioi_thieu') }}"
+                                style="color:{{ url()->current() == route('home.gioi_thieu') ? 'red' : 'black' }}"
+                                class="nav-top-link">GIỚI THIỆU</a>
 
                         </li>
                         <li id="menu-item-952"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-952 menu-item-design-default ">
-                            <a href="{{ route('home.thong_bao') }}" style="color:{{ (url()->current()==route('home.thong_bao'))?'red':'black' }}"class="nav-top-link">THÔNG BÁO</a>
+                            <a href="{{ route('home.thong_bao') }}"
+                                style="color:{{ url()->current() == route('home.thong_bao') ? 'red' : 'black' }}"class="nav-top-link">THÔNG
+                                BÁO</a>
 
                         </li>
                         <li id="menu-item-450"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-450 menu-item-design-default ">
-                            <a href="{{ route('home.su_kien') }}"style="color:{{ (url()->current()==route('home.su_kien'))?'red':'black' }}"  class="nav-top-link ">TIN TỨC - SỰ KIỆN</a>
+                            <a href="{{ route('home.su_kien') }}"style="color:{{ url()->current() == route('home.su_kien') ? 'red' : 'black' }}"
+                                class="nav-top-link ">TIN TỨC - SỰ KIỆN</a>
 
                         </li>
                         <li id="menu-item-148"
                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-148 menu-item-design-default ">
-                            <a href="{{ route('home.dang_ky') }}"style="color:{{ (url()->current()==route('home.dang_ky'))?'red':'black' }}" class="nav-top-link">ĐĂNG KÝ</a>
+                            <a href="{{ route('home.dang_ky') }}"style="color:{{ url()->current() == route('home.dang_ky') ? 'red' : 'black' }}"
+                                class="nav-top-link">ĐĂNG KÝ</a>
                         </li>
                     </ul>
                 </div>

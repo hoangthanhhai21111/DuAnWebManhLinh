@@ -35,14 +35,14 @@
                                 </div>
                             </div>
 
-                            <h3><span style="color: #ff0000; font-size: 120%;">TRUNG TÂM ĐT& SH LÁI XE MẠNH
-                                    LINH</span></h3>
+                            <h4><span style="color: #ff0000; font-size: 120%;">TRUNG TÂM ĐÀO TẠO & SÁT HẠCH LÁI XE MẠNH
+                                    LINH</span></h4>
                             <p class="info"><i class="fa fa-home"></i> <span style="color: #d83131;">▸</span> Địa chỉ:
                                 04 Lê Thế Hiếu, Phường 1, Đông Hà, Quảng Trị</p>
                             <p class="info"><i class="fa fa-mobile-phone"></i> <span style="color: #d83131;">▸
                                 </span>Hotline: 𝟎𝟑𝟑𝟐.𝟒𝟗𝟖.𝟎𝟕𝟐</p>
                             <p class="info"><i class="fa fa-envelope"></i> <span style="color: #d83131;">▸
-                                </span>Email: SHManhLinh@gmail.com</p>
+                                </span>Email: dtlxmanhlinh@gmail.com</p>
                         </div>
                     </div>
 
@@ -124,7 +124,7 @@
 
                 <div class="footer-primary pull-left">
                     <div class="copyright-footer">
-                        Copyright 2023 © <strong>SHManhLinh@gmail.com</strong> </div>
+                        Copyright 2023 © <strong>dtlxmanhlinh@gmail.com</strong> </div>
                 </div>
             </div>
         </div>
