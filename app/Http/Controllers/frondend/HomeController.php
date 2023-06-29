@@ -20,7 +20,7 @@ class HomeController extends Controller
         $thongbaos = Post::query(true)->where('status', 1)->where('category_id', '=', 2)->where('deleted_at', null)->paginate(3);
         // $thongbaos1 = Post::query(true)->where('status',1)->where('category_id', '=',2)->where('deleted_at',null)->orderBy('id', 'DESC')->paginate(1);
         $tintucs = Post::all()->where('status', 1)->where('category_id', '=', 3)->where('deleted_at', null);
-        $anhs =  ImagePost::orderBy('id', 'DESC')->paginate(4);
+        $anhs =  ImagePost::orderBy('id', 'ASC')->paginate(4);
         $videos = Video::all();
         $title = 'Trung Tâm Đào Tạo & Sát Hạch Lái Xe Mạnh Linh';
         return view('frondend.home.home', compact('banners', 'gioithieu', 'thongbaos', 'tintucs', 'anhs', 'videos', 'title'));
